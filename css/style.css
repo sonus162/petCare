@@ -258,6 +258,8 @@ body {
   width: 87%;
   margin-left: 22px;
   text-align: center;
+  transition: 0.5s linear;
+  border-bottom: 5px solid #fff;
 }
 .card-service .card-title {
   padding-top: 40px;
