@@ -1,0 +1,72 @@
+.s_table {
+    font-size: 16px;
+}
+.td-image img {
+    width: 100px;
+}
+.s_table tr td {
+    border-bottom: 1px solid #ccc;
+    padding: 1.5em 0.215em 1.5em 0.215em;
+    text-align: center;
+}
+.s_table {
+    font-size: 16px;
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.s_table tbody .td-price{
+    color: #787878;
+}
+.s_table tbody .td-name a{
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+.s_table tbody .td-quantity {
+    width: 100px;
+    font-size: 12px;
+}
+.s_table .td-remove {
+   color: #ffbc3e;
+   cursor: pointer;
+}
+.s_table .td-quantity input {
+    display: block;
+    text-align: center;
+    border: 1px solid #ffbc3e;
+    margin: 0 auto;
+    font-weight: bold;
+    min-width: 1.667em;
+    width: 1.667em;
+    height: 1.667em;
+}
+.s_table .td-quantity span {
+    display: block;
+    color: #fff;
+    cursor: pointer;
+    min-width: 1.667em;
+    width: 1.667em;
+    height: 1.667em;
+    line-height: 1.667em;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #ffbc3e;
+}
+.checkout {
+    float: right;
+    margin-right: 40px;
+    margin-top: 20px;
+}
+.checkout a {
+    text-decoration: none;
+    background: #ff642f;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+.checkout a:hover {
+    background-color: #ffbc3e;
+}

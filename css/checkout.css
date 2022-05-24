@@ -1,0 +1,112 @@
+.billing {
+    padding: 30px;
+}
+.billing .c-select {
+    width: 100%;
+}
+input {
+    width: 98%;
+    background: #faf6f1;
+    border: none;
+    padding: 16px 0px 16px 10px;
+    outline: none;
+    color: #787878;
+    border-radius: 10px;
+}
+textarea {
+    width: 100%;
+    appearance: none;
+    background: #faf6f1;
+    border: none;
+    padding: 16px 0px 16px 10px;
+    outline: none;
+    color: #787878;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.billing input {
+    width: 98%;
+    background: #faf6f1;
+    border: none;
+    padding: 16px 0px 16px 10px;
+    outline: none;
+    color: #787878;
+    border-radius: 10px;
+}
+.billing .info-customer input,.billing .state-code input,.billing .info-email input  {
+    width: 45%;
+}
+.billing .state-code,.billing .info-email {
+    display: flex;
+    justify-content: space-between;
+}
+.billing>div {
+    margin-bottom: 20px;
+}
+.billing .create-acc {
+    text-decoration: none;
+    color: #787878;
+    font-size: 16px;
+}
+.billing .create-acc:hover {
+    color: #ff642f;
+}
+.billing .create-acc i {
+    padding-right: 10px;
+    color: #ff642f;
+}
+.b-title {
+    font-size: 25px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+.billing .comment textarea {
+    width: 100%;
+    appearance: none;
+    background: #faf6f1;
+    border: none;
+    padding: 16px 0px 16px 10px;
+    outline: none;
+    color: #787878;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.order {
+    padding: 25px;
+}
+.table-order {
+    width: 100%;
+}
+.table-order td {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+.table-order thead {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+.table-order tr td:last-child{
+    text-align: right;
+}
+.table-order thead td {
+    font-size: 20px;
+    font-weight: bold;
+}
+.bank {
+    padding: 50px;
+    background: #faf6f1;
+    border-radius: 20px;
+}
+.b-check {
+    padding: 15px;
+}
+.b-check label {
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+}
+.b-check input {
+    width: auto;
+}
+

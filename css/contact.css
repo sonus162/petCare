@@ -1,0 +1,78 @@
+.content {
+    margin-top: 50px;
+}
+.form-contact {
+    width: 600px;
+    margin: auto;
+}
+.form-contact .info-email {
+    display: flex;
+}
+.form-contact>div {
+    margin: 10px 10px;
+}
+.form-contact .info-email input{
+    margin-right: 10px;
+}
+.form-contact button {
+    position: relative;
+    top: 0;
+    left: 34%;
+    background: #ff6123;
+    color: #fff;
+    text-transform: none;
+    border-radius: 25px;
+}
+.map {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    bottom: -200px;
+}
+.map iframe {
+    width: 100%;
+}
+.contact-info {
+    position: relative;
+    margin-top: 380px;
+}
+.ft-info {
+    width: 400px;
+    background-image: url('../image/bg-contact.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 80px;
+    bottom: 80px;
+}
+.contact-info h2 {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+.ft-contact {
+    padding: 0 50px ;
+}
+.ft-contact span {
+    margin-left: 16px;
+    color: #787878;
+    font-size: 17px;
+}
+@media screen and (max-width:991px){
+    .ft-info {
+        position: initial;
+    }
+    .map {
+        position: initial;
+    }
+    .contact-info {
+        margin-top: 20px;
+    }
+    .info-email>input {
+        margin-top: 10px;
+    }
+    .form-contact {
+        width: 100%;
+    }
+}

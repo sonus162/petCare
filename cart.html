@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Defaut</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Roboto:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css">
+    <link rel="stylesheet" href="/css/defauft.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/cart.css">
+</head>
+<body>
+    <div class="main">
+        <div class="top-header">
+            <div class="container">
+                <div class="hd-top">
+                    <div class="hd-time">
+                        <div class="hd-item"><i class="fas fa-phone-alt"></i><span>+23 425 4466 80</span></div>
+                        <div class="hd-item"><i class="fas fa-envelope"></i><span>needhelp@company.com</span></div>
+                    </div>
+                    <ul class="hd-social">
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="s-header">
+            <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <a href="index.html"><img src="./image/Logo.png" alt=""></a>
+                    </div>
+                    <div class="menu">
+                        <ul class="menu-item">
+                            <li class="is-active"><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="service.html">Services</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="product.html">Shop</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="icon">
+                        <div class="search"><i class="fas fa-search"></i></div>
+                        <div class="cart"><i class="fas fa-shopping-cart"></i></div>
+                    </div>
+                    <div class="hotline">
+                        <a href="">
+                            <div class="icon-hotline">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <span>+92 (8880) 0068</span>
+                        </a>
+                    </div>
+                    <div id="menu-mobile"><i class="fas fa-bars"></i></div>
+                </div>
+            </div>
+        </div>
+        <div class="breadcrumb">
+            <div class="container">
+                <h1 class="bc-title">Cart</h1>
+                <ul class="s-breadcrumb">
+                    <li><a href="index.php">Home</a></li>
+                    <li><a href="">Cart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <table class="s_table">
+                    <thead>
+                        <tr>
+                            <td class="td-image"><b>Item</b></td>
+                            <td class="td-name text-left"><b>Name Product</b></td>
+                            <td class="td-price"><b>Price</b></td>
+                            <td class="td-quantity"><b>Quantity</b></td>
+                            <td class="td-sum"><b>Total</b></td>
+                            <td class="td-remove"></td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="td-image"><img src="image/product/product1.png" alt=""></td>
+                            <td class="td-name text-left"><strong ><a href="">Eatmeet food</a></strong></td>
+                            <td class="td-price" data-price ="10.99" ><span>10.99</span><sup>$</sup></td>
+                            <td class="td-quantity">
+                                <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                <input type="text" name="quantity" value="1" readonly />
+                                <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                            </td>
+                            <td class="td-sum"><span  data-sum="10.99">10.99</span><sup>$</sup></td>
+                            <td class="td-remove" >
+                                <span onclick="deleteProduct(this);"><i class="fas fa-times-circle"></i></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td-image"><img src="image/product/product2.png" alt=""></td>
+                            <td class="td-name text-left"><strong ><a href="">Eatmeet food</a></strong></td>
+                            <td class="td-price" data-price ="9.99" value="9.99"><span>9.99</span><sup>$</sup></td>
+                            <td class="td-quantity">
+                                <span class="minus"><i class="fa fa-minus" aria-hidden="true"></i></span>
+                                <input type="text" name="quantity" value="1" readonly />
+                                <span class="plus"><i class="fa fa-plus" aria-hidden="true"></i></span>
+                            </td>
+                            <td class="td-sum"><span  data-sum="9.99">9.99</spa><sup>$</sup></td>
+                            <td class="td-remove" >
+                                <span onclick="deleteProduct(this);"><i class="fas fa-times-circle"></i></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td class="td-image"></td>
+                            <td class="td-name"></td>
+                            <td class="td-price"></td>
+                            <td class="td-sum">Total</td>
+                            <td class="td-total"><strong><span>10.99</span><sup>$</sup></strong></td>
+                            <td class="td-remove" ></td>
+                        </tr>
+                    </tfoot>
+                </table>
+                <div class="checkout">
+                    <a href="product.html" class="ck-update">Update</a>
+                    <a href="checkout.html" class="ck-checkout">Checkout</a>
+                </div>
+            </div>
+        </div>
+        <div class="s-footer">
+            <div class="container">
+                <div class="new-letter">
+                    <div class="letter-info">
+                        <div class="letter-icon"><i class="fas fa-envelope-open-text"></i></div>
+                        <span class="letter-title">Subscribe now to get lastes updates</span>
+                    </div>
+                    <div class="email">
+                        <input type="text" placeholder="Email address">
+                        <span><i class="fas fa-paper-plane"></i></span>
+                    </div>
+                </div>
+                <div class="footer-info">
+                    <div class="row">
+                        <div class="col-12 col-md-3 padding-none">
+                            <a href="index.php" class="logo">
+                                <img src="image/logo-white.png" alt="">
+                            </a>
+                            <div class="ft-desc">
+                                <p>Tincidunt elit magnis nulla facilisis sagittis maecenas. Sapien nunced amet dolores.</p>
+                            </div>
+                            <ul class="ft-icon-social">
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fab fa-pinterest-p"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-2 padding-none">
+                            <h5 class="ft-tittle">Links</h5>
+                            <ul class="ft-sitemap">
+                                <li><a href="#">Pet Services</a></li>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Pet Boarding</a></li>
+                                <li><a href="#">Latest News</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-12 col-md-3 padding-none">
+                            <h5 class="ft-tittle">Gallery</h5>
+                            <div class="ft-gallery">
+                                <div class="ft-img">
+                                    <a href="image/service/service1.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="image/service/service1.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ft-img">
+                                    <a href="image/service/service2.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="image/service/service2.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ft-img">
+                                    <a href="image/service/service3.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="image/service/service3.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ft-img">
+                                    <a href="image/service/service4.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="image/service/service4.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ft-img">
+                                    <a href="image/service/service5.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="image/service/service5.png" alt="">
+                                    </a>
+                                </div>
+                                <div class="ft-img">
+                                    <a href="image/service/service6.png" data-fancybox="gallery" data-caption="Caption Images 1">
+                                        <img src="image/service/service6.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3 padding-none">
+                            <h5 class="ft-tittle">Contact</h5>
+                            <ul class="ft-contact">
+                                <li><i class="fas fa-map-marker-alt"></i><span>88 Broklyn Golden Street, New York
+                                    United States of America</span></li>
+                                <li><i class="fas fa-phone-alt"></i><span>+23 425 4466 80</span></li>
+                                <li><i class="fas fa-clock"></i><span>Mon - Sun: 8AM - 8PM</span></li>
+                                <li><i class="fas fa-envelope"></i><span>needhelp@company.com</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-copyright">
+                    <p>&#169; All Copyright 2022 by Sonus</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <style>
+        .content {
+            margin-top: 50px;
+        }
+    </style>
+    <script src="/js/jquery-3.3.1.js"></script>
+    <script src="/js/cart.js"></script>
+</body>
+
+</html>

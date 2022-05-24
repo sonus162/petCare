@@ -1,0 +1,125 @@
+.post-detail {
+    border-bottom:none;
+}
+.post-detail h2{
+    font-size: 22px;
+    font-weight: bold;
+    color: #ff642f;
+}
+.post-detail p {
+    margin: 30px 0;
+}
+.benefit {
+    display: flex;
+    align-items: center;
+}
+.img-benefit {
+    margin-right: 40px;
+}
+.img-benefit img{
+    width: 370px;
+    border-radius: 20px;
+}
+.list-benefit h2 {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.list-benefit p {
+    font-size: 16px;
+    padding: 10px 0;
+    color: #787878;
+}
+.list-benefit ul {
+    list-style-type: none;
+}
+.list-benefit ul>li {
+    padding: 5px 0;
+}
+.list-benefit ul>li i {
+    color: #ffbc3e;
+    padding-right: 10px;
+}
+.list-services {
+    list-style-type: none;
+}
+.list-services>li {
+    background: antiquewhite;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.list-services>li a{
+    text-decoration: none;
+    padding-left: 10px;
+    font-size: 16px;
+    color: #787878;
+}
+.list-services>li i {
+    color: #787878;
+}
+.list-services>li:hover {
+    background: #ff642f;
+    transition: 1s;
+}
+.list-services>li:hover a,.list-services>li:hover i {
+    color: #fff;
+}
+.contact-sidebar {
+    background-image: url('../image/service/bg-contact.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 290px;
+    text-align: center;
+    color: #fff;
+}
+.icon-contact {
+    position: relative;
+    top: 20%;
+    padding: 20px;
+    background: #fff;
+    width: 20px;
+    left: 36%;
+    border-radius: 50%;
+}
+.icon-contact i {
+    color: #0087a2;
+    font-size: 20px;
+}
+.contact-sidebar h2 {
+    padding-top: 65px;
+    font-size: 28px;
+}
+.contact-sidebar p:last-child(){
+    font-size: 10px;
+    margin-top: 10px;
+}
+.post-detail img {
+    width: 100%;
+}
+@media screen and (min-width: 1260px){
+    .ht-page__sidebar {
+        width: 350px;
+    }
+}
+@media screen and (max-width:768px){
+    .benefit {
+        display:block
+    }
+    .img-benefit img {
+        width: 100%;
+    }
+    .list-services {
+        margin-top: 10px;
+    }
+    .icon-contact {
+        left: 45%;
+    }
+    .img-benefit {
+        margin-right: 0;
+    }
+}

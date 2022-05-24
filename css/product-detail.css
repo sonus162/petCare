@@ -1,0 +1,346 @@
+.img-detail {
+    width: 100%;
+}
+
+.details {
+    margin-left: 20px;
+}
+.d-name {
+    display: flex;
+    position: relative;
+}
+.d-title {
+    font-size: 45px;
+    font-weight: bold;
+}
+.d-price {
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    font-size: 23px;
+    color: red;
+    font-weight: bold;
+}
+.rate {
+    display: flex;
+    padding: 20px 0;
+    border-bottom: 1px solid #ccc;
+}
+.d-star {
+    color: #f4b301;
+    padding-right: 10px;
+}
+.d-rate {
+    color: #787878;
+    font-size: 16px;
+}
+.d-desc {
+    padding: 20px 0;
+}
+.d-desc p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.d-quantity {
+    display: flex;
+    align-items: center;
+}
+.d-quantity>span {
+    font-size: 18px;
+    font-weight: 600;
+    margin-right: 20px;
+}
+.quantity-4 .num-in {
+	float: left;
+	width: 80px;
+	border: 1px solid #000;
+}
+
+.quantity-4 .in-num {
+	width: 55px;
+	float: left;
+	height: 36px;
+	font-size: 20px;
+	text-align: center;
+	outline: none;
+    border: none;
+}
+
+.quantity-4 .all-span {
+	position: relative;
+	float: right;
+	width: 23px;
+	height: 40px;
+	border-left: 1px solid #000;
+    background: #f0eeee;
+}
+
+.quantity-4 .all-span span {
+	float: left;
+	width: 100%;
+	height: 18px;
+	position: relative;
+	cursor: pointer;
+    border: 0.5px solid;
+}
+.quantity-4 .all-span span:hover {
+    background-color: #f4b301;
+}
+
+.quantity-4 .all-span span:before {
+	content: '';
+	position: absolute;
+	left: 50%;
+	margin-left: -5px;
+}
+
+.quantity-4 span.minus:before {
+	top: -2px;
+	content: '-';
+}
+
+.quantity-4 span.minus.dis:before {
+	opacity: 0.5;
+}
+
+.quantity-4 span.plus:before {
+	bottom: -3px;
+	content: '+';
+}
+/* / end skin 4 */
+.d-cart {
+    margin: 40px 0;
+}
+.d-cart a {
+    text-decoration: none;
+    margin-right: 20px;
+    padding: 13px 30px;
+    background: #f4b301;
+    border-radius: 30px;
+    color: #fff;
+}
+.d-cart a:hover {
+    background: #ff5528;
+    box-shadow: 3px 2px 8px #a92e2e;
+}
+.d-share {
+    display: flex;
+    align-items: center;
+}
+.d-share span {
+    font-size: 18px;
+    font-weight: bold;
+    padding-right: 30px;
+}
+.ft-icon-social li {
+    background: #e5e5e5;
+    cursor: pointer;
+}
+.ft-icon-social a {
+    color: #000;
+}
+.ft-icon-social li:hover {
+    background: #ff5528;
+}
+.ft-icon-social li:hover a {
+    color: #fff;
+}
+
+/*description*/
+.description, .add-review {
+    margin: 40px 0;
+}
+.pd-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.desc-detail p{
+    color: #787878;
+    font-size: 16px;
+    padding-bottom: 20px;
+    display: block;
+}
+.r-item {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    padding: 50px 0;
+}
+.r-item .avatar img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.r-detail {
+    margin: auto;
+}
+.r-info {
+    display: flex;
+    justify-content: space-between;
+}
+.r-time p{
+    display: inline-block;
+    padding-right: 10px;
+    color: #ff5528;
+    font-size: 16px;
+}
+.r-name {
+    font-size: 20px;
+    font-weight: 500;
+}
+.r-desc {
+    padding: 20px 0;
+}
+.r-desc p {
+    color: #787878;
+    font-size: 16px;
+}
+.rating {
+    position: relative;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+}
+.rating label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    cursor: pointer;
+}
+  
+.rating label:last-child {
+    position: static;
+}
+  
+.rating label:nth-child(1) {
+    z-index: 5;
+}
+  
+.rating label:nth-child(2) {
+    z-index: 4;
+}
+  
+.rating label:nth-child(3) {
+    z-index: 3;
+}
+  
+.rating label:nth-child(4) {
+    z-index: 2;
+}
+  
+.rating label:nth-child(5) {
+    z-index: 1;
+}
+  
+.rating label input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+  
+.rating label .icon {
+    float: left;
+    color: transparent;
+}
+  
+.rating label:last-child .icon {
+    color: #000;
+}
+  
+.rating:not(:hover) label input:checked ~ .icon,
+.rating:hover label:hover input ~ .icon {
+    color: #f4b301;
+}
+  
+.rating label input:focus:not(:checked) ~ .icon:last-child {
+    color: #000;
+    text-shadow: 0 0 5px #f4b301;
+}
+
+.rate-review {
+    display: flex;
+    align-items: center;
+}
+.rate-review>span {
+    font-size: 18px;
+    color: #787878;
+    padding-right: 20px;
+}
+.write textarea {
+    width: 100%;
+    appearance: none;
+    background: #faf6f1;
+    border: none;
+    padding: 16px 0px 16px 10px;
+    outline: none;
+    color: #787878;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.info-customer {
+    display: flex;
+    justify-content: space-between;
+}
+.write input {
+    width: 45%;
+    background: #faf6f1;
+    border: none;
+    padding: 16px 0px 16px 10px;
+    outline: none;
+    color: #787878;
+    border-radius: 10px;
+}
+.write textarea::placeholder, .write input::placeholder {
+    padding-left: 20px;
+}
+.btn-review {
+    margin-top: 16px;
+    background: #ff5528;
+    text-transform: none;
+    border-radius: 29px;
+    padding: 14px 30px;
+}
+.r-info.mobile{
+    display: none;
+}
+@media screen and (max-width:768px){
+    .d-name{
+        display: block;
+    }
+    .d-price {
+        position: initial;
+    }
+    .r-info{
+        display: none;
+    }
+    .r-info.mobile,.r-item{
+        display: block;
+    }
+    .avatar {
+        display: flex;
+        align-items: center ;
+    }
+    .r-item .avatar img {
+        width: 80px;
+        height: 80px;
+    }
+    .r-item {
+        padding: 20px 0;
+    }
+}
+@media screen and (max-width:425px) {
+    .write textarea {
+        width: 97%;
+    }
+    .d-share span {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width:375px){
+    .d-title {
+        font-size: 30px;
+    }
+}
