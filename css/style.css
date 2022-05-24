@@ -1397,6 +1397,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
     .card-service .card-img > img {
         width: 85%;
+        height: auto;
     }
     .card-service .card-info{
         top: -108px;
