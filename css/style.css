@@ -1028,7 +1028,7 @@ input[type="range"]::-webkit-slider-thumb {
   width: 44%;
 }
 .news-item {
-  margin: 25px;
+  margin: 15px 5px;
   border-radius: 30px;
   background: #fff;
   box-shadow: 0 4px 28px 0 rgb(0 0 0 / 40%);
